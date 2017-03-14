@@ -1,0 +1,233 @@
+html, body {
+  background-image: url("http://www.designbolts.com/wp-content/uploads/2012/12/Triangle-White-Seamless-Patterns.jpg");
+  height: 100%;
+  width: 100%;
+}
+
+/*Spinner*/
+.spinner {
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+
+  position: absolute;
+  top: 48%;
+  left: 48%;
+  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+  animation: sk-rotateplane 1.2s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-rotateplane {
+  0% { -webkit-transform: perspective(120px) }
+  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+}
+
+@keyframes sk-rotateplane {
+  0% {
+    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+    } 50% {
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+      } 100% {
+        transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      }
+    }
+
+    .spinner-wrapper {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #FFFFFF;
+      z-index: 999999;
+    }
+
+
+    /* Css Class Selectors */
+
+    .myNav {
+      height: 100px;
+      padding-top: 25px;
+    }
+
+    .myNavtop {
+      padding-top: 25px;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 20px;
+    }
+
+    .buttonPadding {
+      padding-top: 30px;
+    }
+
+    .about {
+      padding-top: 150px;
+      padding-bottom: 150px;
+    }
+
+    .myHr {
+      border-top: 4px solid #E7E7E7;
+      border-top-width: 100%;
+    }
+
+    .text-center {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      font-family: 'Open Sans', sans-serif;
+
+    }
+    .text-center h1 {
+      font-size: 4.5em;
+      font-weight: 600;
+      margin: 0;
+      padding: 0;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .brand-text {
+      margin-top: 30px;
+      font-size: 25px;
+      color: black;
+      display: inline;
+    }
+
+    .brandPadding {
+      padding: 0px 15px;
+    }
+
+    .project-img {
+      /*centering trick!*/
+      margin:0 auto;
+      display: block;
+      height: 320px;
+      width: 320px;
+      box-shadow:3px 3px 10px grey;
+    }
+
+    .project-img2 {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin: 0 auto;
+    }
+
+    .smallImgSize {
+      height: 101px;
+      width: 101px;
+    }
+
+    .skillsText {
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      padding-bottom: 30px;
+      font-size: 50px;
+    }
+
+    .circleImg {
+      padding-bottom: 30px;
+      padding-top: 30px;
+    }
+
+
+    .aboutMeText {
+      font-size: 20px;
+      color: #565656;
+    }
+
+    .contactMeText {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .myInput {
+      margin:45px 0px;
+    }
+
+    .contactH1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 60px;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .footer {
+      width: 100%;
+      background-color: white;
+      height: 130px;
+    }
+
+    .footer p {
+      font-size: 20px;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .footer-link {
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .footer-link a {
+      text-decoration: none;
+    }
+
+    .profile-page-link {
+      padding-top: 20px;
+      font-size:20px;
+      font-weight: bold;
+      color: #496279;
+
+    }
+
+    @media (max-width: 630px) {
+      .project-img2 img{
+        width: 60px;
+        height: 60px;
+      }
+      .project-img{
+        width: 210px;
+        height: 210px;
+      }
+
+    }
+
+
+    /* CSS Class Ids - Used For Website Sections */
+
+    #home {
+      background: url("../images/beach-background.jpg") no-repeat center center fixed;
+      display: table;
+      height: 100%;
+      position: relative;
+      width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    #mySkills {
+      background-color: #89bff1;
+      color: #ffffff;
+      padding-top: 120px;
+      padding-bottom: 140px;
+    }
+
+    #contactMe {
+      display: table;
+      height: 750px;
+      position: relative;
+      width: 100%;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      padding-top: 100px;
+    }
